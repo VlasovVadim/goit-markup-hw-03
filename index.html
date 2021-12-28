@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
@@ -16,17 +18,18 @@
 <body>
     <!-- ГОЛОВА -->
     <header class="header">
-        <div class="container header-conteaner">
+        <div class="container flex">
+            <nav class="nav flex">
             <a class="logo" href="/"> <span class="web">Web</span>Studio</a>
-            <nav>
-                <ul class="header-list-nav">
+           
+                <ul class="header-list-nav-1">
                     <li><a class="header-nav-1" href="./index.html">Студия</a></li>
                     <li><a class="header-nav" href="./portfolio.html">Портфолио</a></li>
                     <li><a class="header-nav" href="/">Контакты</a></li>
                 </ul>
             </nav>
-            <div class="header-connect">
-                <ul class="header-list-nav">
+    
+                <ul class="header-list-nav-2 list">
                     <li><a class="header-contacts" href="">info@devstudio.com</a>
                     </li>
                     <li>
@@ -39,27 +42,28 @@
     <!-- КОНЕЦ ГОЛОВЫ -->
     <main>
         <!--СЕКЦИЯ 1-->
-        <section>
-            <div class="head-container container-1">
+        <section class="section-1"> 
+            <div class="container">
+                <div class="content-section">
             <h1 class="head">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕССА</h1>
-            <button class="head-btn head-btn-cnop" type="button">Заказать услугу</button>
+            <button class="button head-button" type="button">Заказать услугу</button>
             </div>
+        </div>
         </section>
 
         
         <!-- КОНЕЦ СЕКЦИЯ 1 -->
 
         <!--ОСОБЕННОСТИ-->
-        <section>
-            <div class="container ">
-            <ul class="advantages-container">
+        <section class="section-special">
+            <div class="container">
+            <ul class="advantages-container list">
                 <li class="advantage-block">
                     <h3 class="h3-advantages">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                     <p class="about-advantages">
                         Идейные соображения, а также начало повседневной работы по
                         формированию позиции.
                     </p>
-                   
                 </li>
                 <li class="advantage-block">
                     
@@ -93,11 +97,10 @@
         </section>
         <!--КОНЕЦ ОСОБЕННОСТИ-->
         <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
-        <section>
+        <section class="section-second">
             <div class="container">
             <h2 class="main-info">Чем мы занимаемся</h2>
-            
-                <ul class="main-info-container">
+                <ul class="main-info-container list">
                 <li class="main-info-container-img">
                     <img class="img-info" src="./image/coding.jpg" alt="" width="370" height="294" />
                     
@@ -112,36 +115,41 @@
                 </li>
             </ul>
             </div>
-           
+
         </section>
         <!-- КОНЕЦ ЧЕМ МЫ ЗАНИМАЕМСЯ-->
         <!--НАЩА КОМАНДА-->
-        <section class="section-team">
+        <section class="section cards">
             <div class="container">
-            <h2 class="main-info-2">Наша команда</h2>
-                        <ul class="">
-                <li>
+                <h2 class="main-info-2">Наша команда</h2>
+                 <ul class="list team-container">
+                <li class="team-worker">
                     <img src="./image/product_designer.jpg" alt="Фото Игорь Демьяненко" width="270" height="260" />
+                    <div class="team-worker-discriptions">
                     <h3 class="team">Игорь Демьяненко</h3>
                     <p  class="team-position">Product Designer</p>
-                    
+                    </div>
                 </li>
-                <li>
+                <li class="team-worker">
                     <img src="./image/Frontend_developer.jpg" alt="Фото Ольга Репина" width="270" height="260" />
+                    <div class="team-worker-discriptions">
                     <h3 class="team">Ольга Репина</h3>
                     <p class="team-position">Frontend Developer</p>
-                    
+                    </div>
                 </li>
-                <li>
+                <li class="team-worker">
                     <img src="./image/Merketing.jpg" alt="Фото Николай Тарасов" width="270" height="260" />
+                    <div class="team-worker-discriptions">
                     <h3 class="team">Николай Тарасов</h3>
                     <p class="team-position">Marketing</p>
-                    
+                    </div>
                 </li>
-                <li>
+                <li class="team-worker">
                     <img src="./image/ul_designer.jpg" alt="Фото Михаил Ермаков" width="270" height="260" />
+                    <div class="team-worker-discriptions">
                     <h3 class="team">Михаил Ермаков</h3>
-                    <p class="team-position">UI Designerr</p>
+                    <p class="team-position">UI Designer</p>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -151,6 +159,8 @@
         <!--КОНЕЦ НАЩА КОМАНДА-->
         <!-- ПОДВАЛ -->
     <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
         <a class="logo-2" href="/"> <span class="web">Web</span>Studio </a>
         <address>
             <p class="footer-address">г. Киев, пр-т Леси Украинки,26</p>
@@ -159,6 +169,8 @@
                 <li><a class="footer-contacts" href=""> +38 099 111 11 11</a></li>
             </ul>
         </address>
+        </div>
+        </div>
         
     </footer>
     <!-- КОНЕЦ ПОДВАЛ -->
